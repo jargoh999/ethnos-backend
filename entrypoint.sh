@@ -15,9 +15,7 @@ python manage.py migrate
 echo "Generating dummy data..."
 python manage.py genarate_dummy_data
 
-# Collect static files
-echo "Collecting static files..."
-python manage.py collectstatic --noinput
+
 
 # Create a superuser if not exists (optional)
 echo "Creating superuser if not exists..."
