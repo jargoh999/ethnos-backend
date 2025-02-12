@@ -9,3 +9,5 @@ services:
         generateValue: true
       - key: DEBUG
         value: false
+      - key: PORT
+        value: 10000
