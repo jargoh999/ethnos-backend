@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ethnos-wallet-backend
+    env: python
+    buildCommand: ./build.sh
+    startCommand: gunicorn e_wallet_backend.wsgi:application
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: false
