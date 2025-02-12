@@ -55,7 +55,7 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173", "https://appa-38622.web.app"  
+    "http://localhost:5173", "https://appa-38622.web.app","*"  
 ]
 ROOT_URLCONF = 'e_wallet_backend.urls'
 
