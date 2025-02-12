@@ -8,6 +8,6 @@ pip install -r requirements.txt
 python manage.py migrate
 
 # Generate dummy data
-python manage.py generate_dummy_data
+python manage.py genarate_dummy_data
 
  
