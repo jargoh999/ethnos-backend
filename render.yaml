@@ -1,13 +1,13 @@
 services:
   - type: web
     name: ethnos-wallet-backend
-    env: python
-    buildCommand: ./build.sh
-    startCommand: gunicorn --bind 0.0.0.0:$PORT e_wallet_backend.wsgi:application
+    env: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
     envVars:
       - key: SECRET_KEY
         generateValue: true
       - key: DEBUG
         value: false
-    plan: free  # Specify the plan
-    region: oregon  # Choose a region
+    plan: free
+    region: oregon
